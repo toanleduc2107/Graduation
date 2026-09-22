@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lễ Tốt Nghiệp — Phạm Viết Thái Sơn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&family=Great+Vibes&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="confetti"></canvas>
+
+    <main class="card">
+      <!-- Nền toà nhà ĐHBK (mờ), nằm nửa phải -->
+      <div class="bg-building" aria-hidden="true"></div>
+
+      <!-- Lá trang trí 4 góc -->
+      <svg class="leaf leaf--tl" viewBox="0 0 200 200" aria-hidden="true">
+        <g fill="#b7cbb4" opacity=".8">
+          <ellipse
+            cx="40"
+            cy="30"
+            rx="26"
+            ry="11"
+            transform="rotate(-30 40 30)"
+          />
+          <ellipse
+            cx="80"
+            cy="55"
+            rx="30"
+            ry="12"
+            transform="rotate(-15 80 55)"
+          />
+          <ellipse
+            cx="30"
+            cy="75"
+            rx="24"
+            ry="10"
+            transform="rotate(-55 30 75)"
+          />
+          <ellipse
+            cx="70"
+            cy="100"
+            rx="28"
+            ry="11"
+            transform="rotate(10 70 100)"
+          />
+        </g>
+        <g fill="#cdd9e6" opacity=".7">
+          <ellipse
+            cx="120"
+            cy="35"
+            rx="24"
+            ry="10"
+            transform="rotate(20 120 35)"
+          />
+          <ellipse
+            cx="55"
+            cy="130"
+            rx="22"
+            ry="9"
+            transform="rotate(-40 55 130)"
+          />
+        </g>
+      </svg>
+      <svg class="leaf leaf--bl" viewBox="0 0 200 200" aria-hidden="true">
+        <g fill="#b7cbb4" opacity=".8">
+          <ellipse
+            cx="40"
+            cy="30"
+            rx="26"
+            ry="11"
+            transform="rotate(-30 40 30)"
+          />
+          <ellipse
+            cx="80"
+            cy="55"
+            rx="30"
+            ry="12"
+            transform="rotate(-15 80 55)"
+          />
+          <ellipse
+            cx="30"
+            cy="75"
+            rx="24"
+            ry="10"
+            transform="rotate(-55 30 75)"
+          />
+        </g>
+        <g fill="#cdd9e6" opacity=".7">
+          <ellipse
+            cx="120"
+            cy="35"
+            rx="24"
+            ry="10"
+            transform="rotate(20 120 35)"
+          />
+        </g>
+      </svg>
+
+      <!-- ===== CỘT TRÁI: ảnh chân dung + mũ ===== -->
+      <aside class="left">
+        <div class="portrait">
+          <img src="img/pro5t.jpg" alt="LÊ ĐỨC TOÀN" />
+        </div>
+        <div class="ribbon">Class of 2026</div>
+
+        <div class="quote">
+          <svg
+            class="quote_divider"
+            viewBox="0 0 200 66"
+            width="200"
+            aria-hidden="true"
+          >
+            <line
+              x1="15"
+              y1="17"
+              x2="72"
+              y2="17"
+              stroke="#3a6ea5"
+              stroke-width="2"
+            />
+
+            <svg class="medal" x="80" y="-10" width="40" viewBox="0 0 60 66">
+              <path d="M22 40 L16 62 L23 57 L27 64 L31 44 Z" fill="#16305c" />
+              <path d="M38 40 L44 62 L37 57 L33 64 L29 44 Z" fill="#16305c" />
+              <polygon
+                points="30.0,5.0 33.3,9.3 38.0,6.6 39.4,11.9 44.8,11.2 44.1,16.6 49.4,18.0 46.7,22.7 51.0,26.0 46.7,29.3 49.4,34.0 44.1,35.4 44.8,40.8 39.4,40.1 38.0,45.4 33.3,42.7 30.0,47.0 26.7,42.7 22.0,45.4 20.6,40.1 15.2,40.8 15.9,35.4 10.6,34.0 13.3,29.3 9.0,26.0 13.3,22.7 10.6,18.0 15.9,16.6 15.2,11.2 20.6,11.9 22.0,6.6 26.7,9.3"
+                fill="#16305c"
+              />
+              <circle
+                cx="30"
+                cy="26"
+                r="14"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.6"
+              />
+              <polygon
+                points="30.0,17.0 32.1,23.1 38.6,23.2 33.4,27.1 35.3,33.3 30.0,29.6 24.7,33.3 26.6,27.1 21.4,23.2 27.9,23.1"
+                fill="#fff"
+              />
+            </svg>
+
+            <line
+              x1="128"
+              y1="17"
+              x2="185"
+              y2="17"
+              stroke="#3a6ea5"
+              stroke-width="2"
+            />
+          </svg>
+          <p class="quote__line">"One Love, One Future"</p>
+          <svg
+            class="quote_divider"
+            viewBox="0 0 200 66"
+            width="200"
+            aria-hidden="true"
+          >
+            <line
+              x1="15"
+              y1="17"
+              x2="72"
+              y2="17"
+              stroke="#3a6ea5"
+              stroke-width="2"
+            />
+
+            <svg class="medal" x="80" y="-10" width="40" viewBox="0 0 60 66">
+              <path d="M22 40 L16 62 L23 57 L27 64 L31 44 Z" fill="#16305c" />
+              <path d="M38 40 L44 62 L37 57 L33 64 L29 44 Z" fill="#16305c" />
+              <polygon
+                points="30.0,5.0 33.3,9.3 38.0,6.6 39.4,11.9 44.8,11.2 44.1,16.6 49.4,18.0 46.7,22.7 51.0,26.0 46.7,29.3 49.4,34.0 44.1,35.4 44.8,40.8 39.4,40.1 38.0,45.4 33.3,42.7 30.0,47.0 26.7,42.7 22.0,45.4 20.6,40.1 15.2,40.8 15.9,35.4 10.6,34.0 13.3,29.3 9.0,26.0 13.3,22.7 10.6,18.0 15.9,16.6 15.2,11.2 20.6,11.9 22.0,6.6 26.7,9.3"
+                fill="#16305c"
+              />
+              <circle
+                cx="30"
+                cy="26"
+                r="14"
+                fill="none"
+                stroke="#fff"
+                stroke-width="1.6"
+              />
+              <polygon
+                points="30.0,17.0 32.1,23.1 38.6,23.2 33.4,27.1 35.3,33.3 30.0,29.6 24.7,33.3 26.6,27.1 21.4,23.2 27.9,23.1"
+                fill="#fff"
+              />
+            </svg>
+
+            <line
+              x1="128"
+              y1="17"
+              x2="185"
+              y2="17"
+              stroke="#3a6ea5"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+
+        <div class="cap-illus" aria-hidden="true">
+          <svg viewBox="0 0 160 120" width="150">
+            <polygon points="80,18 150,48 80,78 10,48" fill="#16305c" />
+            <path d="M40 62 v26 c0 12 80 12 80 0 v-26" fill="#1d3b6d" />
+            <line
+              x1="150"
+              y1="48"
+              x2="150"
+              y2="92"
+              stroke="#c9a24a"
+              stroke-width="3"
+            />
+            <path d="M150 92 l-6 18 h12 z" fill="#d8b25a" />
+          </svg>
+        </div>
+      </aside>
+
+      <!-- ===== CỘT PHẢI: nội dung ===== -->
+      <div class="right">
+        <!-- Hero -->
+        <header class="hero reveal">
+          <div class="crest" aria-hidden="true">
+            <svg viewBox="0 0 300 90" width="240">
+              <!-- nhánh nguyệt quế trái/phải -->
+              <g stroke="#c9a24a" stroke-width="2.5" fill="none" opacity=".9">
+                <path d="M70 70 Q40 55 30 30" />
+                <path d="M230 70 Q260 55 270 30" />
+              </g>
+              <g fill="#c9a24a" opacity=".85">
+                <ellipse
+                  cx="42"
+                  cy="52"
+                  rx="7"
+                  ry="3"
+                  transform="rotate(40 42 52)"
+                />
+                <ellipse
+                  cx="34"
+                  cy="42"
+                  rx="7"
+                  ry="3"
+                  transform="rotate(55 34 42)"
+                />
+                <ellipse
+                  cx="30"
+                  cy="32"
+                  rx="6"
+                  ry="3"
+                  transform="rotate(70 30 32)"
+                />
+                <ellipse
+                  cx="258"
+                  cy="52"
+                  rx="7"
+                  ry="3"
+                  transform="rotate(-40 258 52)"
+                />
+                <ellipse
+                  cx="266"
+                  cy="42"
+                  rx="7"
+                  ry="3"
+                  transform="rotate(-55 266 42)"
+                />
+                <ellipse
+                  cx="270"
+                  cy="32"
+                  rx="6"
+                  ry="3"
+                  transform="rotate(-70 270 32)"
+                />
+              </g>
+              <!-- mũ cử nhân -->
+              <polygon points="150,20 190,38 150,56 110,38" fill="#16305c" />
+              <path d="M126 46 v14 c0 7 48 7 48 0 v-14" fill="#1d3b6d" />
+              <line
+                x1="190"
+                y1="38"
+                x2="190"
+                y2="60"
+                stroke="#c9a24a"
+                stroke-width="2.5"
+              />
+              <circle cx="190" cy="62" r="3.5" fill="#c9a24a" />
+            </svg>
+          </div>
+          <h1 class="hero__title">Lễ Tốt Nghiệp</h1>
+          <p class="hero__sub">GRADUATION CEREMONY</p>
+        </header>
+
+        <!-- Lời mời -->
+        <section class="invite reveal">
+          <p class="invite__line">Trân trọng kính mời</p>
+          <p class="invite__script">Gia đình và Bạn bè</p>
+          <p class="invite__line invite__line--soft">đến tham dự</p>
+          <p class="invite__eyebrow">LỄ TỐT NGHIỆP CỦA</p>
+          <h2 class="invite__name">Lê Đức Toàn</h2>
+          <div class="flourish" aria-hidden="true">✦ ⋅ ✦ ⋅ ✦</div>
+        </section>
+
+        <!-- Thông tin -->
+        <section class="details reveal">
+          <div class="detail">
+            <span class="detail__ico">📅</span>
+            <div>
+              <p class="detail__label">Ngày</p>
+              <p class="detail__value">26/09/2026</p>
+              <p class="detail__note">(Thử bảy)</p>
+            </div>
+          </div>
+          <div class="detail">
+            <span class="detail__ico">🕗</span>
+            <div>
+              <p class="detail__label">Thời gian</p>
+              <p class="detail__value">10:00 AM - 12:00 PM</p>
+            </div>
+          </div>
+          <div class="detail">
+            <span class="detail__ico">📍</span>
+            <div>
+              <p class="detail__label">Địa điểm</p>
+              <p class="detail__value">Hội trường C2</p>
+              <p class="detail__note">
+                Đại học Bách Khoa Hà Nội<br />Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà
+                Nội
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cảm ơn + QR -->
+        <section class="bottom reveal">
+          <div class="thanks">
+            <h3 class="thanks__title"><span class="q">"</span> Lời cảm ơn</h3>
+            <p>Bốn năm đại học là một hành trình đáng nhớ.</p>
+            <p>
+              Xin chân thành cảm ơn gia đình, thầy cô và bạn bè<br />đã luôn yêu
+              thương, đồng hành và chúc phúc cho tôi.
+            </p>
+            <p class="thanks__script">
+              Sự hiện diện của Quý vị là niềm vinh hạnh của tôi.
+            </p>
+          </div>
+          <a
+            class="map-btn"
+            href="https://www.google.com/maps/dir/?api=1&destination=H%E1%BB%99i%20tr%C6%B0%E1%BB%9Dng%20C2%20%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20B%C3%A1ch%20Khoa%20H%C3%A0%20N%E1%BB%99i"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="map-btn__ico" aria-hidden="true">📍</span>
+            <span class="map-btn__text">
+              <strong>Chỉ đường đến Hội trường C2</strong>
+              <small>Mở Google Maps</small>
+            </span>
+          </a>
+        </section>
+      </div>
+    </main>
+
+    <script src="Script.Js"></script>
+  </body>
+</html>
