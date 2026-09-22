@@ -7,7 +7,9 @@
   --paper: #fbfdff;
   --wash: #eef4fb;
   --line: #d3e0ef;
-  --serif: "Playfair Display", Georgia, serif;
+  --serif: "Playfair Display", Georgia, ser
+    
+    if;
   --script: "Great Vibes", cursive;
   --sans: "Be Vietnam Pro", system-ui, sans-serif;
 }
@@ -73,7 +75,7 @@ body {
   right: 0;
   bottom: 0;
   width: 58%;
-  background: url("img/parabol.jpg") center/cover no-repeat;
+  background: url("parabol.jpg") center/cover no-repeat;
   opacity: 0.3;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 30%);
   mask-image: linear-gradient(to right, transparent, #000 30%);
